@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://xsxs2.top/"/>
-  <updated>2017-10-16T05:00:38.120Z</updated>
+  <updated>2017-10-17T08:51:30.803Z</updated>
   <id>http://xsxs2.top/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第二篇博客</title>
+    <link href="http://xsxs2.top/2017/10/16/temp02/"/>
+    <id>http://xsxs2.top/2017/10/16/temp02/</id>
+    <published>2017-10-16T13:04:04.000Z</published>
+    <updated>2017-10-17T08:51:30.803Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="判断有无返回值"><a href="#判断有无返回值" class="headerlink" title="判断有无返回值"></a>判断有无返回值</h2><ol><li>是否支持AMD规范</li><li>查看入口</li></ol><h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><ul><li><p>如果没有入口文件时，以require.js文件路径为准</p></li><li><p>如果有入口文件，以入口文件的路径为准</p></li><li><p>配置基础路径</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>([],<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">require</span>.config(&#123;</div><div class="line">        <span class="comment">//配置基础路径        --&gt;以后所有的模块路径都是基于该基础路径的</span></div><div class="line"></div><div class="line">   baseUrl:<span class="string">"js"</span></div><div class="line">    &#125;);</div><div class="line">                 <span class="comment">//baseUrl相当于html文件所在文件夹</span></div><div class="line">    </div><div class="line">&#125;)</div></pre></td></tr></table></figure></li><li><p>paths为第三方库配置路径</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    baseUrl:<span class="string">'js'</span>,</div><div class="line">  <span class="comment">//paths配置基于baseUrl,可配置文件或文件夹</span></div><div class="line">  paths:&#123;</div><div class="line">      <span class="string">"jq"</span>:<span class="string">"lib/jquery.xxx"</span>,</div><div class="line">    <span class="string">"art"</span>:<span class="string">'lib/template-web'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"><span class="comment">//作用：遇到一些需求的变更，代码变化的地方少，改一个路径就好</span></div></pre></td></tr></table></figure></li></ul><h2 id="shim的使用"><a href="#shim的使用" class="headerlink" title="shim的使用"></a>shim的使用</h2><ul><li><p>问题： bootstrap必须等到jquery执行完毕才会执行</p></li><li><p>用shim解决：</p><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    baseUrl: <span class="string">"js"</span>,</div><div class="line">    paths: &#123;</div><div class="line">        jquery: <span class="string">"lib/jquery-2.1.4"</span>,</div><div class="line">        bootstrap: <span class="string">"../assets/bootstrap/js/bootstrap"</span></div><div class="line">    &#125;,</div><div class="line">    shim: &#123;</div><div class="line">        <span class="comment">//通过这样的配置之后，如果以后要在网站中加载bootstrap的地方，都会事先加载jquery，等到jquery加载完毕再去加载bootstrap</span></div><div class="line">        bootstrap: &#123;</div><div class="line">            deps: [<span class="string">"jquery"</span>]</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure></li></ul><h2 id="改jquery源代码"><a href="#改jquery源代码" class="headerlink" title="改jquery源代码"></a>改jquery源代码</h2><p>新下载的jquery 要修改源码才能使用依赖注入</p><ol><li>什么是依赖注入</li><li>怎么使用依赖注入</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;判断有无返回值&quot;&gt;&lt;a href=&quot;#判断有无返回值&quot; class=&quot;headerlink&quot; title=&quot;判断有无返回值&quot;&gt;&lt;/a&gt;判断有无返回值&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;是否支持AMD规范&lt;/li&gt;
+&lt;li&gt;查看入口&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;路
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>第一篇博客</title>
