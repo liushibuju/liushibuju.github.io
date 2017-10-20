@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径 12345678require([],function()&amp;#123;require.config(&amp;#123;        //配置基础路径        --&amp;gt;以后所有的模块路径都是基于该基础路径的   baseUrl:&quot;">
+<meta name="description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第二篇博客">
 <meta property="og:url" content="http://xsxs2.top/2017/10/16/temp02/index.html">
 <meta property="og:site_name" content="xsxs2">
-<meta property="og:description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径 12345678require([],function()&amp;#123;require.config(&amp;#123;        //配置基础路径        --&amp;gt;以后所有的模块路径都是基于该基础路径的   baseUrl:&quot;">
+<meta property="og:description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-17T08:51:30.803Z">
+<meta property="og:updated_time" content="2017-10-20T14:28:54.422Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="第二篇博客">
-<meta name="twitter:description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径 12345678require([],function()&amp;#123;require.config(&amp;#123;        //配置基础路径        --&amp;gt;以后所有的模块路径都是基于该基础路径的   baseUrl:&quot;">
+<meta name="twitter:description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径">
 
 
 
@@ -321,8 +321,11 @@
 <li><p>如果有入口文件，以入口文件的路径为准</p>
 </li>
 <li><p>配置基础路径</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>([],<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">require</span>.config(&#123;</div><div class="line">        <span class="comment">//配置基础路径        --&gt;以后所有的模块路径都是基于该基础路径的</span></div><div class="line"></div><div class="line">   baseUrl:<span class="string">"js"</span></div><div class="line">    &#125;);</div><div class="line">                 <span class="comment">//baseUrl相当于html文件所在文件夹</span></div><div class="line">    </div><div class="line">&#125;)</div></pre></td></tr></table></figure>
 </li>
+</ul>
+<a id="more"></a>
+  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>([],<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">require</span>.config(&#123;</div><div class="line">        <span class="comment">//配置基础路径        --&gt;以后所有的模块路径都是基于该基础路径的</span></div><div class="line"></div><div class="line">   baseUrl:<span class="string">"js"</span></div><div class="line">    &#125;);</div><div class="line">                 <span class="comment">//baseUrl相当于html文件所在文件夹</span></div><div class="line">    </div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<ul>
 <li><p>paths为第三方库配置路径</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    baseUrl:<span class="string">'js'</span>,</div><div class="line">  <span class="comment">//paths配置基于baseUrl,可配置文件或文件夹</span></div><div class="line">  paths:&#123;</div><div class="line">      <span class="string">"jq"</span>:<span class="string">"lib/jquery.xxx"</span>,</div><div class="line">    <span class="string">"art"</span>:<span class="string">'lib/template-web'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"><span class="comment">//作用：遇到一些需求的变更，代码变化的地方少，改一个路径就好</span></div></pre></td></tr></table></figure>
 </li>
@@ -524,7 +527,7 @@ var jiathis_config={
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://muzaisimai.github.io/" title="simao" target="_blank">simao</a>
+                    <a href="http://muzaisimao.github.io/" title="simao" target="_blank">simao</a>
                   </li>
                 
               </ul>
@@ -599,7 +602,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共1.5k字</span>
+  <span class="post-count">博客全站共2.4k字</span>
 </div>
 
         
