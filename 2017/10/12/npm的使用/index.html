@@ -74,24 +74,24 @@
 
 
 
-  <link rel="alternate" href="/index.html" title="xsxs2" type="application/atom+xml" />
+  <link rel="alternate" href="/index.html" title="刘柯的个人博客" type="application/atom+xml" />
 
 
 
 
 
 
-<meta name="description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径">
+<meta name="description" content="npm下载包 初始化    npm init -y    下载包 npm install 包名  注意：3点几版本包名后加–save    npm install jquery  简写 npm i jquery npm install art-template">
 <meta property="og:type" content="article">
-<meta property="og:title" content="第二篇博客">
-<meta property="og:url" content="http://xsxs2.top/2017/10/16/temp02/index.html">
-<meta property="og:site_name" content="xsxs2">
-<meta property="og:description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径">
+<meta property="og:title" content="npm下载包的使用">
+<meta property="og:url" content="http://xsxs2.top/2017/10/12/npm的使用/index.html">
+<meta property="og:site_name" content="刘柯的个人博客">
+<meta property="og:description" content="npm下载包 初始化    npm init -y    下载包 npm install 包名  注意：3点几版本包名后加–save    npm install jquery  简写 npm i jquery npm install art-template">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-20T14:28:54.422Z">
+<meta property="og:updated_time" content="2017-11-08T10:16:29.686Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="第二篇博客">
-<meta name="twitter:description" content="判断有无返回值 是否支持AMD规范 查看入口  路径 如果没有入口文件时，以require.js文件路径为准  如果有入口文件，以入口文件的路径为准  配置基础路径">
+<meta name="twitter:title" content="npm下载包的使用">
+<meta name="twitter:description" content="npm下载包 初始化    npm init -y    下载包 npm install 包名  注意：3点几版本包名后加–save    npm install jquery  简写 npm i jquery npm install art-template">
 
 
 
@@ -121,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://xsxs2.top/2017/10/16/temp02/"/>
+  <link rel="canonical" href="http://xsxs2.top/2017/10/12/npm的使用/"/>
 
 
 
 
 
-  <title>第二篇博客 | xsxs2</title>
+  <title>npm下载包的使用 | 刘柯的个人博客</title>
   
 
 
@@ -167,7 +167,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">xsxs2</span>
+        <span class="site-title">刘柯的个人博客</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -244,7 +244,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://xsxs2.top/2017/10/16/temp02/">
+    <link itemprop="mainEntityOfPage" href="http://xsxs2.top/2017/10/12/npm的使用/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="lake">
@@ -253,7 +253,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="xsxs2">
+      <meta itemprop="name" content="刘柯的个人博客">
     </span>
 
     
@@ -261,7 +261,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">第二篇博客</h1>
+          <h1 class="post-title" itemprop="name headline">npm下载包的使用</h1>
         
 
         <div class="post-meta">
@@ -273,8 +273,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-16T21:04:04+08:00">
-                2017-10-16
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-10-12T11:14:45+08:00">
+                2017-10-12
               </time>
             
 
@@ -311,37 +311,57 @@
       
 
       
-        <h2 id="判断有无返回值"><a href="#判断有无返回值" class="headerlink" title="判断有无返回值"></a>判断有无返回值</h2><ol>
-<li>是否支持AMD规范</li>
-<li>查看入口</li>
-</ol>
-<h2 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h2><ul>
-<li><p>如果没有入口文件时，以require.js文件路径为准</p>
-</li>
-<li><p>如果有入口文件，以入口文件的路径为准</p>
-</li>
-<li><p>配置基础路径</p>
-</li>
+        <h2 id="npm下载包"><a href="#npm下载包" class="headerlink" title="npm下载包"></a>npm下载包</h2><ul>
+<li>初始化</li>
 </ul>
-<a id="more"></a>
-  <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>([],<span class="function"><span class="keyword">function</span>(<span class="params"></span>)</span>&#123;<span class="built_in">require</span>.config(&#123;</div><div class="line">        <span class="comment">//配置基础路径        --&gt;以后所有的模块路径都是基于该基础路径的</span></div><div class="line"></div><div class="line">   baseUrl:<span class="string">"js"</span></div><div class="line">    &#125;);</div><div class="line">                 <span class="comment">//baseUrl相当于html文件所在文件夹</span></div><div class="line">    </div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p> npm init -y </p>
+</blockquote>
 <ul>
-<li><p>paths为第三方库配置路径</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    baseUrl:<span class="string">'js'</span>,</div><div class="line">  <span class="comment">//paths配置基于baseUrl,可配置文件或文件夹</span></div><div class="line">  paths:&#123;</div><div class="line">      <span class="string">"jq"</span>:<span class="string">"lib/jquery.xxx"</span>,</div><div class="line">    <span class="string">"art"</span>:<span class="string">'lib/template-web'</span></div><div class="line">  &#125;</div><div class="line">&#125;)</div><div class="line"><span class="comment">//作用：遇到一些需求的变更，代码变化的地方少，改一个路径就好</span></div></pre></td></tr></table></figure>
+<li><p>下载包 npm install 包名 </p>
+<p>注意：3点几版本包名后加–save</p>
 </li>
 </ul>
-<h2 id="shim的使用"><a href="#shim的使用" class="headerlink" title="shim的使用"></a>shim的使用</h2><ul>
-<li><p>问题： bootstrap必须等到jquery执行完毕才会执行</p>
-</li>
-<li><p>用shim解决：</p>
-<figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">require</span>.config(&#123;</div><div class="line">    baseUrl: <span class="string">"js"</span>,</div><div class="line">    paths: &#123;</div><div class="line">        jquery: <span class="string">"lib/jquery-2.1.4"</span>,</div><div class="line">        bootstrap: <span class="string">"../assets/bootstrap/js/bootstrap"</span></div><div class="line">    &#125;,</div><div class="line">    shim: &#123;</div><div class="line">        <span class="comment">//通过这样的配置之后，如果以后要在网站中加载bootstrap的地方，都会事先加载jquery，等到jquery加载完毕再去加载bootstrap</span></div><div class="line">        bootstrap: &#123;</div><div class="line">            deps: [<span class="string">"jquery"</span>]</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line"></div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+<blockquote>
+<p>npm install jquery  简写 npm i jquery</p>
+<p>npm install art-template</p>
+</blockquote>
+<a id="more"></a>
+<ul>
+<li><p>之后得到一个文件夹和两个文件</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">node_modules   <span class="comment">//下载包的目录</span></div><div class="line">package.json</div><div class="line">package-lock.json</div></pre></td></tr></table></figure>
 </li>
 </ul>
-<h2 id="改jquery源代码"><a href="#改jquery源代码" class="headerlink" title="改jquery源代码"></a>改jquery源代码</h2><p>新下载的jquery 要修改源码才能使用依赖注入</p>
-<ol>
-<li>什么是依赖注入</li>
-<li>怎么使用依赖注入</li>
-</ol>
+<h3 id="使用淘宝镜像下载包"><a href="#使用淘宝镜像下载包" class="headerlink" title="使用淘宝镜像下载包"></a>使用淘宝镜像下载包</h3><blockquote>
+<p>npm install vue –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a></p>
+</blockquote>
+<p>###下载package.json依赖包</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="string">"dependencies"</span>: &#123;  <span class="comment">// 依赖包</span></div><div class="line">    <span class="string">"art-template"</span>: <span class="string">"^4.12.2"</span>,</div><div class="line">    <span class="string">"bootstrap"</span>: <span class="string">"^3.3.7"</span>,</div><div class="line">    <span class="string">"jquery"</span>: <span class="string">"^3.2.1"</span>,</div><div class="line">    <span class="string">"vue"</span>: <span class="string">"^2.5.2"</span></div><div class="line">  &#125;</div></pre></td></tr></table></figure>
+<ul>
+<li>直接下载package.json文件中的依赖包</li>
+</ul>
+<blockquote>
+<p>npm install</p>
+<p>npm init –production  //未知作用</p>
+</blockquote>
+<h3 id="package-lock-json介绍"><a href="#package-lock-json介绍" class="headerlink" title="package-lock.json介绍"></a>package-lock.json介绍</h3><ul>
+<li>记录下载的包，提高再次下载的速度</li>
+</ul>
+<h3 id="卸载包"><a href="#卸载包" class="headerlink" title="卸载包"></a>卸载包</h3><blockquote>
+<p>npm uninstall 包名</p>
+</blockquote>
+<h3 id="安装指定版本包"><a href="#安装指定版本包" class="headerlink" title="安装指定版本包"></a>安装指定版本包</h3><blockquote>
+<p>npm install jquery@2</p>
+</blockquote>
+<h3 id="查看包"><a href="#查看包" class="headerlink" title="查看包"></a>查看包</h3><blockquote>
+<p>npm list 简写 npm ls</p>
+</blockquote>
+<h3 id="隐藏node-modules文件"><a href="#隐藏node-modules文件" class="headerlink" title="隐藏node_modules文件"></a>隐藏node_modules文件</h3><blockquote>
+<p>vi .gitignore</p>
+</blockquote>
+<ul>
+<li>在配置文件中添加node_modules并保存</li>
+</ul>
 
       
     </div>
@@ -366,8 +386,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/15/第一篇博客/" rel="next" title="第一篇博客">
-                <i class="fa fa-chevron-left"></i> 第一篇博客
+              <a href="/2017/01/05/es6/" rel="next" title="es6初体验">
+                <i class="fa fa-chevron-left"></i> es6初体验
               </a>
             
           </div>
@@ -376,8 +396,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2017/10/19/博学谷项目总结/" rel="prev" title="博学谷项目总结">
-                博学谷项目总结 <i class="fa fa-chevron-right"></i>
+              <a href="/2017/10/19/博学谷项目总结/" rel="prev" title="星星学项目总结">
+                星星学项目总结 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -485,7 +505,7 @@ var jiathis_config={
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -549,7 +569,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#判断有无返回值"><span class="nav-number">1.</span> <span class="nav-text">判断有无返回值</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#路径"><span class="nav-number">2.</span> <span class="nav-text">路径</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#shim的使用"><span class="nav-number">3.</span> <span class="nav-text">shim的使用</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#改jquery源代码"><span class="nav-number">4.</span> <span class="nav-text">改jquery源代码</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#npm下载包"><span class="nav-number">1.</span> <span class="nav-text">npm下载包</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用淘宝镜像下载包"><span class="nav-number">1.1.</span> <span class="nav-text">使用淘宝镜像下载包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#package-lock-json介绍"><span class="nav-number">1.2.</span> <span class="nav-text">package-lock.json介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#卸载包"><span class="nav-number">1.3.</span> <span class="nav-text">卸载包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#安装指定版本包"><span class="nav-number">1.4.</span> <span class="nav-text">安装指定版本包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#查看包"><span class="nav-number">1.5.</span> <span class="nav-text">查看包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#隐藏node-modules文件"><span class="nav-number">1.6.</span> <span class="nav-text">隐藏node_modules文件</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -602,7 +622,7 @@ var jiathis_config={
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.4k字</span>
+  <span class="post-count">博客全站共3.9k字</span>
 </div>
 
         
