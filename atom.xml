@@ -139,4 +139,28 @@
     
   </entry>
   
+  <entry>
+    <title>面试总结</title>
+    <link href="http://xsxs2.top/2016/08/25/%E7%AC%AC%E4%B8%80%E6%AC%A1%E8%99%90%E5%BF%83%E9%9D%A2%E8%AF%95/"/>
+    <id>http://xsxs2.top/2016/08/25/第一次虐心面试/</id>
+    <published>2016-08-25T13:04:04.000Z</published>
+    <updated>2017-11-13T14:05:43.180Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li><p>移动端em 转换 px ？</p><blockquote><p><a href="https://wenku.baidu.com/view/7480f66a6294dd88d0d26bd1.html" target="_blank" rel="external">https://wenku.baidu.com/view/7480f66a6294dd88d0d26bd1.html</a></p></blockquote></li><li><p>你还有什么要问的吗？<em>1 </em>2  *3  （问了3次）</p><a id="more"></a></li><li><p>有一个数组，不用for循环，不用迭代器，把数组遍历出来？</p><figure class="highlight js"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">&lt;script&gt;</div><div class="line">    <span class="keyword">let</span> arr = [<span class="number">11</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>, <span class="number">6</span>, <span class="number">7</span>, <span class="number">8</span>, <span class="number">9</span>];</div><div class="line">    <span class="keyword">let</span> i = <span class="number">0</span>;</div><div class="line">    <span class="keyword">let</span> eachArr = <span class="function">(<span class="params">arr</span>) =&gt;</span> &#123;</div><div class="line">        <span class="keyword">if</span> (arr[i]) &#123;</div><div class="line">            <span class="built_in">console</span>.log(arr[i]);</div><div class="line">            i++;</div><div class="line">            eachArr(arr);</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    eachArr(arr);</div><div class="line">&lt;<span class="regexp">/script&gt;</span></div></pre></td></tr></table></figure></li><li><p>有一串字符串，里面有未知的div 、p 、br、hr、等标签和一些内容，需求：把标签找到并删除？（未解决）</p></li><li><p>用过那些框架？</p></li><li><p>用过jquery的那些方法？</p></li><li><p>链式编程的原理？</p></li><li><p>react 生命周期?</p><blockquote><p>官方解释：<a href="https://reactjs.org/docs/react-component.htm" target="_blank" rel="external">https://reactjs.org/docs/react-component.htm</a></p></blockquote><p>​</p></li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;ol&gt;
+&lt;li&gt;&lt;p&gt;移动端em 转换 px ？&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://wenku.baidu.com/view/7480f66a6294dd88d0d26bd1.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://wenku.baidu.com/view/7480f66a6294dd88d0d26bd1.html&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;你还有什么要问的吗？&lt;em&gt;1 &lt;/em&gt;2  *3  （问了3次）&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
 </feed>
